@@ -1,0 +1,176 @@
+.formContainer {}
+
+.formContainer>div>label {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(75, 74, 74, 0.79);
+    line-height: 17px;
+    margin-bottom: 1em;
+    display: block;
+    font-family: var(--primary-font);
+}
+
+.formContainer>div>article>h2 {
+    font-weight: 500;
+    font-size: 33.18px;
+    line-height: 45px;
+    color: #0D0D26;
+    font-family: var(--tertiary-font);
+}
+
+.formContainer>div>article>p {
+    font-size: 16.2px;
+    line-height: 28.8px;
+    font-family: var(--secondary-font);
+    color: #4B4A4A;
+    margin-bottom: 1em;
+}
+
+.formContainer>div>label:nth-of-type(5) {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 13.33px;
+    letter-spacing: 0.01em;
+    color: #A8D8D8;
+    margin-right: 2em;
+    font-family: var(--secondary-font);
+}
+
+.formContainer>div>label:nth-of-type(5)>input {
+    height: 30px;
+}
+
+
+/* styling the text inputs */
+
+.formContainer>div>label>input {
+    display: block;
+    padding-left: .5em;
+    height: 65px;
+    border-radius: 5px;
+    border: 1.5px solid var(--main-color);
+    width: 100%;
+    max-width: 712px;
+}
+
+
+/*styling the input place holder*/
+
+.formContainer>div>label>input::placeholder {
+    color: rgba(75, 74, 74, 0.47);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--primary-font);
+}
+
+.formContainer>div>fieldset {
+    display: block;
+    border: 0;
+    text-align: center;
+    padding: 0 3em;
+}
+
+.formContainer>div>fieldset>label {
+    font-family: var(--tertiary-font);
+}
+
+.span {
+    font-family: var(--tertiary-font);
+    display: block;
+    text-align: right;
+    position: relative;
+    bottom: 3em;
+    right: 1em;
+}
+
+.formContainer>div>fieldset>button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 20px;
+    color: #4B4A4A;
+    margin-bottom: .2em;
+    font-family: var(--tertiary-font);
+}
+
+.formContainer>div>fieldset>label>a {
+    color: var(--main-color);
+    font-family: var(--secondary-font);
+}
+
+
+/* Customize the label (the container) */
+
+.custom_box {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    font-size: 13.33px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.custom_box input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 12.5px;
+    width: 12.5px;
+    background-color: white;
+    top: 0;
+}
+
+
+/* When the radio button is checked, add a purple background */
+
+.custom_box input:checked~.checkmark {
+    background-color: #9191DB;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.custom_box input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.custom_box .checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
