@@ -1,0 +1,54 @@
+.mailContainer>div>label {
+    height: 97px;
+    gap: 1em;
+    display: flex;
+    margin-bottom: 4em
+}
+
+.mailContainer>div {
+    padding: 0 1.5em;
+}
+
+.mailContainer>div>label>input {
+    width: 30%;
+    height: 97px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1.5px solid #01C8FF;
+    border-radius: 5px;
+    max-width: 78px;
+}
+
+.mailContainer>article>h2 {
+    font-family: var(--tertiary-font);
+    font-weight: 500;
+    font-size: 25.18px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #0D0D26;
+}
+
+.mailContainer>article>p {
+    font-family: var(--secondary-font);
+    font-size: 16.2px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    color: #4B4A4A;
+    margin-bottom: .6em;
+}
+
+.mailContainer>div>button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: var(--main-color);
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    color: #4B4A4A;
+    margin-bottom: .2em;
+    font-family: var(--tertiary-font);
+    cursor: pointer;
+}
