@@ -1,14 +1,16 @@
 .container {
     background: #E3ECFF;
     border-radius: 20px;
-    width: 100%;
-    max-width: 1512px;
     max-height: 916px;
     display: grid;
-    grid-template-columns: minmax(300px, 1.5fr) 1fr;
+    grid-template-columns: minmax(250px, 1.5fr) 1fr;
     row-gap: 3em;
     min-width: 300px;
     column-gap: 2em;
+}
+
+.main {
+    padding: 2em;
 }
 
 .container>div>img {
@@ -46,7 +48,10 @@
     }
     .container>div:last-child {
         background: var(--main-color);
-        border-radius: 0px 20px 20px 0px;
+        border-radius: 0px 0px 20px 20px;
         padding: 0 2em;
+    }
+    .main {
+        padding: 1em;
     }
 }

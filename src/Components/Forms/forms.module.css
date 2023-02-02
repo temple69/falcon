@@ -17,7 +17,7 @@
 }
 
 .formContainer>div>article>p {
-    font-size: 16.2px;
+    font-size: 11.2px;
     line-height: 28.8px;
     font-family: var(--secondary-font);
     color: #4B4A4A;
@@ -71,6 +71,8 @@
 
 .formContainer>div>fieldset>label {
     font-family: var(--tertiary-font);
+    padding-bottom: 2.5em;
+    display: block;
 }
 
 .span {

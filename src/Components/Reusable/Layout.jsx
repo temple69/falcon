@@ -7,17 +7,19 @@ import VerifyEmail from '../verifyEmail/VerifyEmail'
 
 
 const Layout = ({signup}) => {
-    const{container}=styling
+    const{container,main}=styling
   return (
+    <main className={main}>
     <section className={container}>
         <div>
-            <img src={falcon_logo} alt="" />
+            <img src={falcon_logo} alt="falcon-logo" />
             {signup?<Form/>:<VerifyEmail/>}
         </div>
         <div>
-            <img src={landing_image} alt="" />
+            <img src={landing_image} alt="logo" />
         </div>
     </section>
+    </main>
   )
 }
 

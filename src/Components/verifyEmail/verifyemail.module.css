@@ -23,7 +23,7 @@
 .mailContainer>article>h2 {
     font-family: var(--tertiary-font);
     font-weight: 500;
-    font-size: 25.18px;
+    font-size: 20.18px;
     line-height: 40px;
     letter-spacing: 0.01em;
     color: #0D0D26;
@@ -31,7 +31,7 @@
 
 .mailContainer>article>p {
     font-family: var(--secondary-font);
-    font-size: 16.2px;
+    font-size: 11.2px;
     line-height: 29px;
     letter-spacing: 0.01em;
     color: #4B4A4A;

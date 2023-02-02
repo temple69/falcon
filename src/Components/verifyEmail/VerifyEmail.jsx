@@ -7,11 +7,13 @@ const VerifyEmail = () => {
   const nextHandler = (arr) => {
     for (let index = 0; index < arr.length; index++) {
       const element = arr[index];
+      
       element.addEventListener("input", (e) => {
         if (e.target.value.length === 1 && arr.length > [index+1] ) {
           arr[index + 1].focus();
         }
       });
+    
     }
   };
   //Cleanup Function to avoid the console being clogged up
